@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Combined App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- To-Do List Section -->
+    <div class="app-section todo-section">
+        <h1>My To-Do List</h1>
+        <div class="input-section">
+            <input type="text" id="todoInfo" placeholder="Add a new task...">
+            <button id="addBtn">Add Task</button>
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+
+    <!-- Weather App Section -->
+    <div class="app-section weather-section">
+        <h1>Weather App</h1>
+        <div id="weather-display">
+            <p>Enter a city to see the weather!</p>
+        </div>
+        <form id="weatherForm" class="input-section">
+            <input type="text" placeholder="Enter city" id="cityInfo">
+            <button type="submit">Get Weather</button>
+        </form>
+    </div>
+
+    <!-- Guntur Cities Section -->
+    <div class="app-section guntur-cities-section">
+        <h1>Popular Cities in Guntur</h1>
+        <ul class="guntur-cities-list">
+            <li data-city="Guntur">Guntur</li>
+            <li data-city="Tenali">Tenali</li>
+            <li data-city="Chilakaluripet">Chilakaluripet</li>
+            <li data-city="Mangalagiri">Mangalagiri</li>
+            <li data-city="Narasaraopet">Narasaraopet</li>
+            <li data-city="Repalle">Repalle</li>
+            <li data-city="Ponnur">Ponnur</li>
+            <li data-city="Bapatla">Bapatla</li>
+            <li data-city="Sattenapalli">Sattenapalli</li>
+            <li data-city="Vinukonda">Vinukonda</li>
+        </ul>
+    </div>
+
+    <!-- Axios Library -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
